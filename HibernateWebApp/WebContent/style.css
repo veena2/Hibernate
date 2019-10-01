@@ -1,0 +1,17 @@
+@charset "ISO-8859-1";
+
+body{
+background-color: #ff80ff;
+border-style: 2px solid green;;
+}
+input{
+font-size: 30px;
+border-style: double;
+}
+
+p{
+color: blue;
+font-size: 30px;
+text-align: center;
+}
+
