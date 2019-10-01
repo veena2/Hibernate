@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.hibernate.org/xsd/hibernate-mapping hibernate-mapping-4.0.xsd ">
+
+<class name="com.zensar.entities.Product" table="product1">
+<id name="productId" column="id">
+<generator class="increment"></generator>  <!-- Primary key should be integer for increment -->
+
+<!-- uuid is universal unique identifier which is used when P.K is varchar/String
+it will generate 16 character long string. -->
+
+<!-- <generator class="uuid.string"></generator>
+It generates unique string but it is 32 char long. Datatype string/varchar -->
+
+<!-- <generator class="native"></generator>  
+auto generate the id acc to database-->
+
+<!-- <generator class="sequence"></generator>
+user defined; where database uses sequence for auto generation -->
+
+
+</id>  
+
+<property name="name"></property>
+<property name="brand"></property>
+<property name="price"></property>
+
+
+</class>
+
+
+
+</hibernate-mapping>
